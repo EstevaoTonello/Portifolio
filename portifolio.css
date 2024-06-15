@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: rgb(46, 43, 43);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.layout {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+header {
+    padding: 40px 4%;
+    background-color: rgb(34, 32, 32);
+    box-shadow: 0 0 40px 10px rgb(32, 32, 32);
+    height: 10vh;
+}
+
+header > .layout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header a {
+    color: rgb(160, 136, 1);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: gold;
+}
+
+.imagem img {
+    width: 450px; 
+    height: auto; 
+    border-radius: 25px; 
+     
+}
+
+
+
+
+
+main {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    color: gold;
+    font-size: 60px;
+}
+
+
+section.site {
+    padding: 40px 4%;
+    width: 100%;
+}
+
+.interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+section.sobre{
+    padding: 40px 4%;
+    width: 100%;
+}
+
+
+
+.efeito {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid gold;
+    font-size: 80px;
+    animation: typing 3s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: gold; }
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .interface {
+        flex-direction: column;
+    }
+}
+    button {
+    padding: 20px 280px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: gold;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.sobreMim p{
+    font-size: 40px;
+}
+
+
+
+
+button:hover, form .botao_enviar input:hover {
+    box-shadow: 0px 0px 8px gold;
+}
+
+
+footer {
+    height: 15vh;
+    padding: 50px 0;
+    background-color: rgb(34, 32, 32);
+    box-shadow: 0 0 40px 10px rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer .rodape2 p {
+    color: gold;
+}
+
+footer .rodape2 {
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .rodape {
+    border-bottom: 2px solid gold;
+    padding: 30px;
+}
+
+/*pagina contato*/
+
+section.formulario{
+    padding: 80px 4%;
+    width: 100%;
+}
+
+form{
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width:100%;
+    background-color: rgb(71, 67, 67);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+
+}
+
+form textarea {
+    resize: none;
+    max-height: 300px;
+}
+
+form .botao_enviar{
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+form .botao_enviar input{
+    width: 150px;
+    background-color: gold;
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+section.habilidade{
+    padding: 80px 4%;
+
+}
+
+section.habilidades{
+    padding: 80px 4%;
+    width: 100%;
+}
+
+.img_habi1{
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    gap: 80px;
+    display:inline-flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 40px;
+    font-size: 70px;
+
+}
+
+.img_habi2{
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    gap: 80px;
+    display:inline-flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 25px;
+    border-radius: 40px;
+    font-size: 70px;
+
+}
+.img_habi3{
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    gap: 80px;
+    display:inline-flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    border-radius: 40px;
+    font-size: 70px;
+
+}
